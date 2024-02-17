@@ -13,9 +13,21 @@
 
     <button id="make-purple">Make Purple</button>
     <button id="make-green">Make Green</button>
-    
+
+    <button id="golden">Make GoldenRod</button>
+
 
     <script>
+
+        document.getElementById("golden").addEventListener('click', function makeGoldenRod(){
+            document.body.style.backgroundColor = 'goldenrod'
+        })
+
+
+
+
+
+
         const makeTheButtonPurple = document.getElementById("make-purple")
         makeTheButtonPurple.addEventListener('click', function makePurple(){
             document.body.style.backgroundColor = 'purple';
