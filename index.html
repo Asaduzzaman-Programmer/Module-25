@@ -8,6 +8,19 @@
 <body>
     <h1 onclick="console.log(7)">Dom er ajke speacial Event</h1>
     <button onclick="console.log(7)">Click me</button>
+    <button onclick="document.body.style.backgroundColor = 'Yellow'">Make Yellow</button>
+    <button onclick="makeRed()" ondblclick="document.body.style.backgroundColor= 'Yellow'">Make Red</button>
+
+    <button id="make-purple">Make Purple</button>
+    <button id="make-green">Make Green</button>
+    
+
+    <script>
+        const makeTheButtonPurple = document.getElementById("make-purple")
+        makeTheButtonPurple.addEventListener('click', function makePurple(){
+            document.body.style.backgroundColor = 'purple';
+        })
+    </script>
 
     <script src="event.js"></script>
 </body>
