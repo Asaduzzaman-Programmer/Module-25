@@ -15,7 +15,9 @@
     <button id="make-green">Make Green</button>
 
     <button id="golden">Make GoldenRod</button>
-
+    <h2 id="changeme">Amake change korte chao tahole button click koro</h2>
+    <button onclick="change()">Change The avobe line</button>
+    <button id="avobe">Change Avobe the line</button>
 
     <script>
 
@@ -23,9 +25,16 @@
             document.body.style.backgroundColor = 'goldenrod'
         })
 
+        function change(){
+            const changeme = document.getElementById("changeme")
+            changeme.innerText = 'Sesh mesh change korei felle'
+        }
 
-
-
+        
+        document.getElementById('avobe').addEventListener('click', function(){
+           const mal = document.getElementById("changeme")
+           mal.innerText = "dur hali magi"
+        })
 
 
         const makeTheButtonPurple = document.getElementById("make-purple")
